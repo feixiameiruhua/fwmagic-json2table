@@ -1,0 +1,50 @@
+#单行显示(用于调用接口时使用)：
+{"tableComment":"用户信息","error":"int comment '错误信息'","status":"varchar(20) DEFAULT NULL COMMENT '状态'","date":"datetime COMMENT '时间' ","user":{"name":"varchar(20) DEFAULT NULL COMMENT '用户名'","password":"varchar(20) NOT NULL COMMENT '密码'","address":"varchar(20) DEFAULT NULL COMMENT '地址'"},"hobby":"varchar(100) DEFAULT NULL COMMENT '爱好'","results":[{"tableComment":"结果","date":"varchar(20)","dayPictureUrl":"varchar(200)","nightPictureUrl":"varchar(200)","weather":"varchar(50)","wind":"varchar(20)","temperature":"varchar(20)","dog":{"name":"varchar(30)","age":"int","color":"varchar(30)"}}],"brother":{"name":"varchar(20)","age":"int","insert_time":"datetime","home":{"phone":"varchar(20)","address":"varchar(200)","size":"varchar(50)"},"hobby":"varchar(20)","trip":[{"place":"varchar(20)","time":"datetime"},{"place":"varchar(20)","time":"varchar(20)"}]}}
+
+
+#模版显示
+{
+	"tableComment":"用户信息",
+    "error": "int comment '错误信息'",
+    "status": "varchar(20) DEFAULT NULL COMMENT '状态'",
+    "date": "datetime COMMENT '时间' ",
+	"user":{
+		"name":"varchar(20) DEFAULT NULL COMMENT '用户名'",
+		"password":"varchar(20) NOT NULL COMMENT '密码'",
+		"address":"varchar(20) DEFAULT NULL COMMENT '地址'"
+	},
+	"hobby":"varchar(100) DEFAULT NULL COMMENT '爱好'",
+    "results": [
+		{
+			"tableComment":"结果",
+			"date": "varchar(20)",
+			"dayPictureUrl": "varchar(200)",
+			"nightPictureUrl": "varchar(200)",
+			"weather": "varchar(50)",
+			"wind": "varchar(20)",
+			"temperature": "varchar(20)",
+			"dog":{"name":"varchar(30)","age":"int","color":"varchar(30)"}
+		}
+    ],
+	"brother":{
+		"name":"varchar(20)",
+		"age":"int",
+		"insert_time":"datetime",
+		"home":{
+			"phone":"varchar(20)",
+			"address":"varchar(200)",
+			"size":"varchar(50)"
+		},
+		"hobby":"varchar(20)",
+		"trip":[
+			{
+				"place":"varchar(20)",
+				"time":"datetime"
+			},
+			{
+				"place":"varchar(20)",
+				"time":"varchar(20)"
+			}
+		]
+	}
+}
